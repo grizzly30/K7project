@@ -7,39 +7,57 @@
 
 import UIKit
 
-class DataListViewController: UITableViewController {
-
+class DataListViewController: UITableViewController, PersonProtocol {
+    var selectedPersonAge: Int = 20 {
+        didSet {
+            var selectedPerson = personArray[number ?? 0]
+            selectedPerson.age = selectedPersonAge
+            personArray[number ?? 0] = selectedPerson
+            tableView.reloadData()
+        }
+    }
+    
+    
+    var number: Int?
+    
+    var personArray: [Person] = [
+        Person(name: "Danilo", lastName: "Danilovic", age: 24, gender: Gender.male),
+        Person(name: "Jovana", lastName: "Jovanovic", age: 25,gender: Gender.female),
+        Person(name: "Marko", lastName: "Markovic", age: 26,gender: Gender.male)]
+    
+    var selectedSymbol: Person?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return personArray.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PersonCell", for: indexPath)
 
-        // Configure the cell...
+        cell.textLabel?.text = "\(personArray[indexPath.row].name) \(personArray[indexPath.row].lastName), \(personArray[indexPath.row].age)"
 
         return cell
     }
-    */
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedSymbol = personArray[indexPath.row]
+        number = indexPath.row
+        performSegue(withIdentifier: "personDetailSegue", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "personDetailSegue", let symbolDetailVC=segue.destination as? PersonViewController {
+            symbolDetailVC.selectedSymbol = selectedSymbol
+            symbolDetailVC.personDelegate = self
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

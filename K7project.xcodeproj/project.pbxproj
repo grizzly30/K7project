@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04403B842741662E00F3AD36 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04403B832741662E00F3AD36 /* WebViewController.swift */; };
+		04403B87274171CB00F3AD36 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04403B86274171CB00F3AD36 /* Person.swift */; };
+		04403B8B2741827900F3AD36 /* DataListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04403B8A2741827900F3AD36 /* DataListViewController.swift */; };
+		04403B8F27418C9200F3AD36 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04403B8E27418C9200F3AD36 /* PersonViewController.swift */; };
 		04662F1527413E250045D6F9 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04662F1427413E250045D6F9 /* KeyboardViewController.swift */; };
 		049BA12827412DC500148254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BA12727412DC500148254 /* AppDelegate.swift */; };
 		049BA12A27412DC500148254 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BA12927412DC500148254 /* SceneDelegate.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04403B832741662E00F3AD36 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		04403B86274171CB00F3AD36 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		04403B8A2741827900F3AD36 /* DataListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListViewController.swift; sourceTree = "<group>"; };
+		04403B8E27418C9200F3AD36 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		04662F1427413E250045D6F9 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		049BA12427412DC500148254 /* K7project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = K7project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049BA12727412DC500148254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,10 +77,14 @@
 				049BA12927412DC500148254 /* SceneDelegate.swift */,
 				049BA12B27412DC500148254 /* HomeViewController.swift */,
 				04662F1427413E250045D6F9 /* KeyboardViewController.swift */,
+				04403B8A2741827900F3AD36 /* DataListViewController.swift */,
+				04403B832741662E00F3AD36 /* WebViewController.swift */,
 				049BA12D27412DC500148254 /* Main.storyboard */,
 				049BA13027412DC600148254 /* Assets.xcassets */,
 				049BA13227412DC600148254 /* LaunchScreen.storyboard */,
 				049BA13527412DC600148254 /* Info.plist */,
+				04403B86274171CB00F3AD36 /* Person.swift */,
+				04403B8E27418C9200F3AD36 /* PersonViewController.swift */,
 			);
 			path = K7project;
 			sourceTree = "<group>";
@@ -208,9 +220,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04403B8B2741827900F3AD36 /* DataListViewController.swift in Sources */,
+				04403B87274171CB00F3AD36 /* Person.swift in Sources */,
 				049BA12C27412DC500148254 /* HomeViewController.swift in Sources */,
+				04403B8F27418C9200F3AD36 /* PersonViewController.swift in Sources */,
 				049BA12827412DC500148254 /* AppDelegate.swift in Sources */,
 				049BA12A27412DC500148254 /* SceneDelegate.swift in Sources */,
+				04403B842741662E00F3AD36 /* WebViewController.swift in Sources */,
 				04662F1527413E250045D6F9 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

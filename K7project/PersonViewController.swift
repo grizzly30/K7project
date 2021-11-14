@@ -6,24 +6,44 @@
 //
 
 import UIKit
-
+protocol PersonProtocol: class {
+    var selectedPersonAge: Int { get set }
+}
 class PersonViewController: UIViewController {
+    
+    
+    weak var personDelegate: PersonProtocol?
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var lastNameLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
+    
+    var selectedSymbol: Person?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //navigationItem.rightBarButtonItem = 
+        nameLabel.text = selectedSymbol?.name
+        lastNameLabel.text = selectedSymbol?.lastName
+        ageLabel.text = "\(selectedSymbol?.age ?? 20)"
+        genderLabel.text = selectedSymbol?.gender.rawValue
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func addYearPressed(_ sender: Any) {
+        if selectedSymbol!.age < 99 {
+            selectedSymbol?.age += 1
+            ageLabel.text = "\(selectedSymbol!.age)"}
     }
-    */
-
+    @IBAction func removeYearPressed(_ sender: Any) {
+        if selectedSymbol!.age < 99 {
+            selectedSymbol?.age -= 1
+            ageLabel.text = "\(selectedSymbol!.age)"
+        }
+    }
+    @IBAction func cancelPressed(_ sender: Any) {
+        personDelegate?.selectedPersonAge = selectedSymbol?.age ?? 20
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }

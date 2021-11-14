@@ -8,11 +8,12 @@
 import UIKit
 
 class KeyboardViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+//        let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+//        navigationItem.backBarButtonItem = backBarButtonItem
+        //self.navigationItem.backButtonTitle = ""
     }
 
 }

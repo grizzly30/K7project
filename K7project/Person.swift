@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct Person {
+    let name: String
+    let lastName: String
+    var age: Int
+    let gender: Gender
+    
+}
+enum Gender: String {
+    case male = "Male"
+    case female = "Female"
+}
