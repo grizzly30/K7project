@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04662F1527413E250045D6F9 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04662F1427413E250045D6F9 /* KeyboardViewController.swift */; };
 		049BA12827412DC500148254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BA12727412DC500148254 /* AppDelegate.swift */; };
 		049BA12A27412DC500148254 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BA12927412DC500148254 /* SceneDelegate.swift */; };
 		049BA12C27412DC500148254 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BA12B27412DC500148254 /* HomeViewController.swift */; };
 		049BA12F27412DC500148254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049BA12D27412DC500148254 /* Main.storyboard */; };
 		049BA13127412DC600148254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049BA13027412DC600148254 /* Assets.xcassets */; };
 		049BA13427412DC600148254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049BA13227412DC600148254 /* LaunchScreen.storyboard */; };
+		3B7B44A2C7715D2935B7E147 /* Pods_K7project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8E553FCC9666D78AAB00A4 /* Pods_K7project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04662F1427413E250045D6F9 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		049BA12427412DC500148254 /* K7project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = K7project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049BA12727412DC500148254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		049BA12927412DC500148254 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		049BA13027412DC600148254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049BA13327412DC600148254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049BA13527412DC600148254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E8E553FCC9666D78AAB00A4 /* Pods_K7project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K7project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		242B2798924F41520ADEAC1E /* Pods-K7project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K7project.release.xcconfig"; path = "Target Support Files/Pods-K7project/Pods-K7project.release.xcconfig"; sourceTree = "<group>"; };
+		EC57B6BD849A85FEF83E8FB2 /* Pods-K7project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K7project.debug.xcconfig"; path = "Target Support Files/Pods-K7project/Pods-K7project.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7B44A2C7715D2935B7E147 /* Pods_K7project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				049BA12627412DC500148254 /* K7project */,
 				049BA12527412DC500148254 /* Products */,
+				CF6A9B81C84471E417CB33E7 /* Pods */,
+				78E17BE334DDEC98341B13C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,30 @@
 				049BA12727412DC500148254 /* AppDelegate.swift */,
 				049BA12927412DC500148254 /* SceneDelegate.swift */,
 				049BA12B27412DC500148254 /* HomeViewController.swift */,
+				04662F1427413E250045D6F9 /* KeyboardViewController.swift */,
 				049BA12D27412DC500148254 /* Main.storyboard */,
 				049BA13027412DC600148254 /* Assets.xcassets */,
 				049BA13227412DC600148254 /* LaunchScreen.storyboard */,
 				049BA13527412DC600148254 /* Info.plist */,
 			);
 			path = K7project;
+			sourceTree = "<group>";
+		};
+		78E17BE334DDEC98341B13C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E8E553FCC9666D78AAB00A4 /* Pods_K7project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF6A9B81C84471E417CB33E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC57B6BD849A85FEF83E8FB2 /* Pods-K7project.debug.xcconfig */,
+				242B2798924F41520ADEAC1E /* Pods-K7project.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 049BA13827412DC600148254 /* Build configuration list for PBXNativeTarget "K7project" */;
 			buildPhases = (
+				8E4EC1AF607255DD2BED2110 /* [CP] Check Pods Manifest.lock */,
 				049BA12027412DC500148254 /* Sources */,
 				049BA12127412DC500148254 /* Frameworks */,
 				049BA12227412DC500148254 /* Resources */,
+				86B345792697F45A7397175D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		86B345792697F45A7397175D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K7project/Pods-K7project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K7project/Pods-K7project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-K7project/Pods-K7project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E4EC1AF607255DD2BED2110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-K7project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		049BA12027412DC500148254 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 				049BA12C27412DC500148254 /* HomeViewController.swift in Sources */,
 				049BA12827412DC500148254 /* AppDelegate.swift in Sources */,
 				049BA12A27412DC500148254 /* SceneDelegate.swift in Sources */,
+				04662F1527413E250045D6F9 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +355,7 @@
 		};
 		049BA13927412DC600148254 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC57B6BD849A85FEF83E8FB2 /* Pods-K7project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +374,7 @@
 		};
 		049BA13A27412DC600148254 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 242B2798924F41520ADEAC1E /* Pods-K7project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

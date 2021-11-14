@@ -85,21 +85,34 @@
             </objects>
             <point key="canvasLocation" x="1803" y="-638"/>
         </scene>
-        <!--View Controller-->
+        <!--Keyboard View Controller-->
         <scene sceneID="mzs-Bd-XpT">
             <objects>
-                <viewController id="4zI-vN-JAx" sceneMemberID="viewController">
+                <viewController id="4zI-vN-JAx" customClass="KeyboardViewController" customModule="K7project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hnd-Jg-YuS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A6Q-iD-hAz">
+                                <rect key="frame" x="50" y="431" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8E2-kQ-zcn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A6Q-iD-hAz" firstAttribute="centerY" secondItem="hnd-Jg-YuS" secondAttribute="centerY" id="0yQ-9g-N05"/>
+                            <constraint firstItem="A6Q-iD-hAz" firstAttribute="centerX" secondItem="hnd-Jg-YuS" secondAttribute="centerX" id="5AL-4d-gWh"/>
+                            <constraint firstItem="8E2-kQ-zcn" firstAttribute="trailing" secondItem="A6Q-iD-hAz" secondAttribute="trailing" constant="50" id="VFg-fA-uVw"/>
+                            <constraint firstItem="A6Q-iD-hAz" firstAttribute="leading" secondItem="8E2-kQ-zcn" secondAttribute="leading" constant="50" id="myl-tn-0Xx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lYE-Fx-9YO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TS9-Aw-XGf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1804" y="94"/>
+            <point key="canvasLocation" x="1802.8985507246377" y="93.75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="t3C-fj-ZQv">
